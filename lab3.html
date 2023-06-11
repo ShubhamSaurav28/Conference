@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="lab3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script src="https://kit.fontawesome.com/389577046f.js" crossorigin="anonymous"></script>
+  <script src="lab3.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.7.0/css/flag-icons.min.css" integrity="sha512-s/Nra58/et4CDKSnhUiPrce+8M5tdK1Ps0+9dKe4I9JH/g0QGzsPAdf1fLeBsMTMG1zWMBsnzxvPgTOAFUHwLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="header">
+    <h1>CONFERENCE</h1>
+    <p>A <b>website</b> created by Shubham.</p>
+  </div>
+  
+  <div class="navbar black">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button"><i class="fa fa-home"></i>HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a onclick="document.getElementById('id01').style.display='block'" class="bar-item button hide-small right hover-text-green">Login</a>
+  </div>
+
+
+
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <i class="fa-solid fa-user">&nbsp;<h4 class="pro">Profile</h4></i>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="uname" name="log" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" name="log" required>
+          <br>
+        <button class="logbtnn" type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <br>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  
+
+  <div class="row">
+    <div class="side">
+      <h2>About</h2>
+      <img src="images/stem-list-EVgsAbL51Rk-unsplash.jpg" class="fimage" style="height:200px;">
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Latest Information Alerts</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul>
+        <li><a class="newmeet" href="#">Upcoming International Conference</a></li>
+        <li><a class="newmeet" href="#">Event on Quantum</a></li>
+        <li><a class="newmeet" href="#">news about something</a></li>
+        <li><a class="newmeet" href="#">news about something</a></li>
+      </ul>
+      <div>
+        <h3>Country</h3>
+        <span class="fi fi-in"></span>&nbsp<a href="#" class="coun" name="country">India</a><br>
+        <span class="fi fi-us"></span>&nbsp<a href="#" class="coun" name="country">United States</a><br>
+        <span class="fi fi-fr"></span>&nbsp<a href="#" class="coun" name="country">France</a><br>
+        <span class="fi fi-gr"></span>&nbsp<a href="#" class="coun" name="country">Greece</a><br>        
+        <button class="showmore">..show more</button>
+      </div>
+    </div>
+    <div class="main">
+    <div class="bloc">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <img src="images/michael-g5kIy_K8k68-unsplash.jpg" class="fimage">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <br>
+    <div class="bloc">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <img src="images/michael-g5kIy_K8k68-unsplash.jpg" class="fimage">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <br>
+    <div class="bloc">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <img src="images/michael-g5kIy_K8k68-unsplash.jpg" class="fimage">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+  
+  
+  
+  <footer class="center black padding-64 hover-opacity-off">
+    <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+    <div class="xlarge section">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+      <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat hover-opacity"></i></a>
+      <a href="https://in.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p hover-opacity"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin hover-opacity"></i></a>
+    </div>
+    <p>Powered by <a href="#" title="Shubham Saurav" target="_blank" class="hover-text-green">Shubham Saurav</a></p>
+  </footer>
+</body>
+</html>
